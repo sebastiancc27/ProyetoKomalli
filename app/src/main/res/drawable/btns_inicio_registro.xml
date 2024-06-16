@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo del botón -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Color de fondo del botón -->
+            <corners android:radius="8dp" /> <!-- Redondear esquinas, ajusta el radio según tu diseño -->
+        </shape>
+    </item>
+    <!-- Sombra -->
+    <item android:right="3dp" android:left="0.9dp" android:bottom="2dp" android:top="0.9dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_blue" /> <!-- Color de la sombra -->
+            <corners android:radius="8dp" /> <!-- Redondear esquinas, ajusta el radio según tu diseño -->
+        </shape>
+    </item>
+</layer-list>

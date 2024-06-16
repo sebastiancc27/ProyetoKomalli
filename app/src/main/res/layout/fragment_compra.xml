@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.CompraFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary_blue"
+        android:text="@string/fragmento_compra_titulo"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons8_tarjeta_96_ezgif_com_gif_maker"
+        android:layout_marginTop="50dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@color/color_accent_gray">
+
+        <TextView
+            android:id="@+id/tv_nombre_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginBottom="57dp"
+            android:text="Hot Cakes"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginBottom="14dp"
+            android:text="Total"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="57dp"
+            android:text="22 piezas"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total_pago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="14dp"
+            android:text="$50.00"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_realizar_pago"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_verde"
+        android:text="@string/btn_fragmento_compra_pago"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+       android:id="@+id/bottom_home"
+       android:title="Inicio"
+       android:icon="@drawable/home"
+       />
+    <item
+        android:id="@+id/bottom_comentarios"
+        android:title="Comentarios"
+        android:icon="@drawable/icons8_comentario_60_ezgif_com_gif_maker"
+        />
+    <item
+        android:id="@+id/bottom_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/icons8_usuario_masculino_en_crculo_481_ezgif_com_gif_maker"
+        />
+</menu>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.ProductoFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary_blue"
+        android:text="@string/fragmento_producto_titulo"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/icons8_emoji_sndwich_96_ezgif_com_gif_maker"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_nombre_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Nombre Platillo"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Existencias Platillo"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="70dp"
+            />
+        <TextView
+            android:id="@+id/tv_num_existencias_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="30"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/primary_blue"
+    android:padding="3dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragmento_producto_cantidad"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_num_seleccionado_producto"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btn_agregar_cantidad_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="2dp"
+        />
+    <Button
+        android:id="@+id/btn_eliminar_cantidad_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="2dp"
+
+        />
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/primary_blue"
+        android:padding="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragmento_producto_total"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_pagar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="$3.00"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_fragmento_producto_pagar"
+        android:background="@drawable/btn_verde"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
+
+</FrameLayout>

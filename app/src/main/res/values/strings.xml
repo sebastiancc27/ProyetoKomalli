@@ -1,0 +1,82 @@
+<resources>
+    <!--ACTIVITY MAIN -> SPLASH SCREEN-->
+    <string name="app_name">Komalli</string>
+    <string name="splash_screen_eslogan">Facultad de Estadística e \n Informática</string>
+    <!--ACTIVITY REGISTRO INICIO SESION -->
+    <string name="saludo_registro_inicios">¡Bienvenido!</string>
+    <string name="registro_inicios_activity_slogan">Comida rápida \n estudios sin interrupciones</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="btn_registrarme">Registrarme</string>
+    <string name="error_et_nombre">Campo nombre requerido</string>
+    <!--ACTIVITY REGISTRO-->
+    <string name="registro_activity_titulo">Registrar</string>
+    <string name="et_nombre_registro">Nombre</string>
+    <string name="et_apellido_registro">Apellido</string>
+    <string name="et_telefono_registro">Telefono</string>
+    <string name="et_localidad_registro">Localidad</string>
+    <string name="et_correo_registro">Correo Institucional</string>
+    <string name="et_contrasena_registro">Contraseña</string>
+    <string name="btn_registrarme_registro">Registrarme</string>
+    <!--ACTIVITY INICIO DE SESIÓN-->
+    <string name="inicio_sesion_activity_titulo">Iniciar Sesión</string>
+    <string name="et_correo_inicio_sesion">Correo Institucional</string>
+    <string name="et_contrasena_inicio_sesion">Contraseña</string>
+    <string name="btn_iniciar_sesion_activity">Iniciar Sesión</string>
+    <!--ACTIVITY MODIFICAR PERFIL-->
+    <string name="modificar_perfil_activity_titulo">Mi Perfíl</string>
+    <string name="tv_modificacion_datos">Modificación de Datos</string>
+    <string name="_tv_nombre_usuario">Cristiano Ronaldo</string>
+    <string name="et_telefono_usuario">Teléfono</string>
+    <string name="et_localidad_usuario">Localidad</string>
+    <string name="btn_modificar_datos">Modificar Datos</string>
+    <string name="btn_regresar">Regresar</string>
+    <!--ACTIVITY HISTORIAL DE COMPRAS-->
+    <string name="historial_compras_activity_titulo">Compras</string>
+    <string name="tv_historial_compras">Historial de Compras</string>
+    <string name="tv_nombre_platillo">Nombre Platillo</string>
+    <string name="tv_precio_platillo">Total</string>
+    <string name="tv_producto_titulo">Producto</string>
+    <string name="btn_regresar_hc">Regresar</string>
+    <string name="tv_total_pagado_titulo">Total pagado</string>
+    <!--ACTIVITY COMENTARIOS-->
+    <string name="comentarios_activity_titulo">Comentarios</string>
+    <string name="tv_agregar_comantario">Agregar Comentario</string>
+    <string name="btn_agregar_comentario">Agregar Comentario</string>
+    <string name="btn_regresar_comentarios">Regresar</string>
+    <!--ACTIVITY PAGO-->
+    <string name="pago_activity_titulo">Pago</string>
+    <string name="tv_compra_del_producto">Compra del Producto</string>
+    <string name="tv_id_compra">Id de Compra</string>
+    <string name="tv_compra_registrada">El producto ha sido registrado en su historial de compras</string>
+    <string name="btn_seguir_comprando">Seguir Comprando</string>
+    <!--ACTIVITY NAV-HEADER-->
+    <string name="tv_nombre_usuario_nav">Nombre de Usuario</string>
+    <string name="abrir_nav">Abrir</string>
+    <string name="cerra_nav">Cerrar</string>
+    <!-- FRAGMENTO PRODUCTO-->
+    <string name="fragmento_inicio_titulo">Desayunos 8:00-13:00 Comidas 13:00-18:00</string>
+    <string name="fragmento_producto_titulo">Produto Seleccionado</string>
+    <string name="fragmento_pago_titulo">Pago</string>
+    <string name="fragmento_producto_cantidad">Cantidad</string>
+    <string name="fragmento_producto_total">Total a Pagar</string>
+    <string name="btn_fragmento_producto_pagar">Pagar</string>
+    <!-- FRAGMENTO PERFIL-->
+    <string name="fragmento_mi_perfil_titulo">Mi Perfil</string>
+    <string name="fragmento_mi_perfil_correo">Correo</string>
+    <string name="fragmento_mi_perfil_telefono">Telefono</string>
+    <string name="fragmento_mi_perfil_localidad">Localidad</string>
+    <string name="btn_fragmento_mi_perfil_historial_compras">Historial de Compras</string>
+    <string name="btn_fragmento_mi_perfil_modificar_datos">Modificar mis datos</string>
+    <string name="btn_fragmento_mi_perfil_cerrar_sesion">Cerrar Sesión</string>
+    <string name="btn_fragmento_mi_perfil_eliminar_perfil">Eliminar Perfil</string>
+    <!-- FRAGMENTO COMPRA -->
+    <string name="fragmento_compra_titulo">Produto Seleccionado</string>
+    <string name="btn_fragmento_compra_pago">Realizar Pago</string>
+    <!-- FRAGMENTO COMENTARIOS -->
+    <string name="fragmento_comentarios_titulo">Comentarios</string>
+    <!--ITEM RECYCLE COMENTARIOS-->
+    <string name="tv_usuario_comentario">Cristiano Ronaldo</string>
+    <string name="tv_contenido_comentario">Contenido del comentario</string>
+
+
+</resources>

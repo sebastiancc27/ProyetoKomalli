@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/primary_blue"
+    >
+    <ImageView
+
+        android:layout_marginTop="100dp"
+        android:id="@+id/logo_splas_screen"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:srcCompat="@drawable/_200_logosimbolo_rgb_fondos_oscuros__1_" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/splash_screen_eslogan"
+      android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+    />
+
+
+
+</LinearLayout>

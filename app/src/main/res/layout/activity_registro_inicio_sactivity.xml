@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroInicioSActivity"
+    android:background="@color/primary_blue"
+    >
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:text="@string/saludo_registro_inicios"
+        android:shadowDx="1"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        android:shadowColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="400dp"
+        android:background="@drawable/logo"
+        >
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="130dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:srcCompat="@drawable/_200_logosimbolo_rgb_fondos_oscuros__1_"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_inicios_activity_slogan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:shadowDx="1"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        android:shadowColor="@color/white"
+        />
+<LinearLayout
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    >
+
+    <Button
+        android:id="@+id/iniciar_sesion_btn"
+        android:textSize="12sp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:shadowDx="1"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/btns_inicio_registro"
+        android:text="@string/btn_iniciar_sesion"
+        android:layout_gravity="center_vertical"
+
+        />
+
+    <Button
+        android:id="@+id/registrarme_btn"
+        android:textSize="12sp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registrarme"
+        android:background="@drawable/btns_inicio_registro"
+        android:shadowDx="1"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        />
+</LinearLayout>
+
+
+
+</LinearLayout>
