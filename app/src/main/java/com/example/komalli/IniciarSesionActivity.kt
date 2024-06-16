@@ -32,6 +32,7 @@ class IniciarSesionActivity : AppCompatActivity() {
                 if(usuariosDB.validadUsuario(correo,contrasena)==true){
                     Toast.makeText(this@IniciarSesionActivity, "DATOS VALIDADOS", Toast.LENGTH_LONG).show()
                     val intent = Intent(this@IniciarSesionActivity, PlatilloActivity::class.java)
+                    intent.putExtra("correo",binding.etCorreo.text.toString())
                     startActivity(intent)
                     finish()
                 }else{
@@ -44,8 +45,8 @@ class IniciarSesionActivity : AppCompatActivity() {
     private fun datosValidos( correo : String, contrasena : String) : Boolean{
         var esValido =  true
         if(correo.isEmpty()){
-           binding.etCorreo.error="Campo de correo requerido"
-           esValido=false
+            binding.etCorreo.error="Campo de correo requerido"
+            esValido=false
         }
 
         if(contrasena.isEmpty()){
