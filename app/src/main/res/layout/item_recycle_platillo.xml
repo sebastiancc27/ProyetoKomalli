@@ -19,7 +19,7 @@
         >
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imgv_platillo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/icons8_emoji_sndwich_96_ezgif_com_gif_maker" />

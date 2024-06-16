@@ -54,11 +54,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tvIdCompra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_marginEnd="16dp"
-            android:text="id de prueba"
+            android:text=""
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -76,6 +77,7 @@
         android:textAlignment="center"
         />
     <Button
+        android:id="@+id/btnSeguirComprando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_seguir_comprando"
