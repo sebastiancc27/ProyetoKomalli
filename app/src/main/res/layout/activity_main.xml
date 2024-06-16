@@ -16,7 +16,7 @@
         android:id="@+id/logo_splas_screen"
         android:layout_width="match_parent"
         android:layout_height="330dp"
-        app:srcCompat="@drawable/_200_logosimbolo_rgb_fondos_oscuros__1_" />
+        app:srcCompat="@drawable/img_logo_fondos_oscuros" />
 
     <TextView
         android:layout_marginTop="30dp"

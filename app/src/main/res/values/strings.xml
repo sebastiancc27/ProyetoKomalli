@@ -69,7 +69,7 @@
     <string name="btn_fragmento_mi_perfil_modificar_datos">Modificar mis datos</string>
     <string name="btn_fragmento_mi_perfil_cerrar_sesion">Cerrar Sesión</string>
     <string name="btn_fragmento_mi_perfil_eliminar_perfil">Eliminar Perfil</string>
-    <!-- FRAGMENTO COMPRA -->
+    <!-- FRAGMENTO COMPRA-->
     <string name="fragmento_compra_titulo">Produto Seleccionado</string>
     <string name="btn_fragmento_compra_pago">Realizar Pago</string>
     <!-- FRAGMENTO COMENTARIOS -->

@@ -40,7 +40,7 @@
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:text="@string/btn_regresar_hc"
-            android:background="@drawable/btn_verde"
+            android:background="@drawable/shape_btn_verde"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"

@@ -32,7 +32,7 @@
         android:id="@+id/imageView"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:srcCompat="@drawable/icons8_usuario_masculino_en_crculo_96_ezgif_com_gif_maker"
+        app:srcCompat="@drawable/icono_perfil_usuario_azul"
         android:layout_marginLeft="20dp"
         />
 
@@ -44,7 +44,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/et_comentarios"
+        android:background="@drawable/shape_et_comentarios"
         />
 
     <Button
@@ -52,7 +52,7 @@
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_agregar_comentario"
-        android:background="@drawable/btn_verde"
+        android:background="@drawable/shape_btn_verde"
         android:textColor="@color/white"
         android:layout_marginStart="37dp"
         android:layout_marginTop="20dp"
@@ -62,7 +62,7 @@
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_regresar_comentarios"
-        android:background="@drawable/btn_verde"
+        android:background="@drawable/shape_btn_verde"
         android:textColor="@color/white"
         android:layout_marginStart="37dp"
         android:layout_marginTop="20dp"

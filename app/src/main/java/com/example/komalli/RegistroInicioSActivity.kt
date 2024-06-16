@@ -23,7 +23,6 @@ class RegistroInicioSActivity : AppCompatActivity() {
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding=ActivityRegistroInicioSactivityBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)

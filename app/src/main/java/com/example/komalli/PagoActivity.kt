@@ -17,7 +17,6 @@ class PagoActivity : AppCompatActivity() {
     private var id = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityPagoBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)

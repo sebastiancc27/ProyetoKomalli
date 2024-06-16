@@ -24,7 +24,6 @@ class HistorialComprasActivity : AppCompatActivity(), ListenerRecycleHCompras {
     private var correo = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding= ActivityHistorialComprasBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)

@@ -24,32 +24,22 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_comentarios"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="640dp"
             tools:listitem="@layout/item_recycle_comentarios"
             />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            >
-            <ImageButton
-                android:id="@+id/btn_quitar_comentario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_restar_100_ezgif_com_gif_maker"
-                android:background="@color/white"
-                android:layout_marginStart="200dp"
-                />
-
-            <ImageButton
-                android:id="@+id/btn_agregar_comentario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_aadir_100_ezgif_com_gif_maker"
-                android:background="@color/white"
-                />
-
-        </LinearLayout>
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_agregar_comentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="600dp"
+        app:srcCompat="@drawable/icono_agregar"
+        android:tint="@color/white"
+        android:backgroundTint="@color/primary_green"
+        />
+
 
 </FrameLayout>

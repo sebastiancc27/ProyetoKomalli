@@ -1,5 +1,6 @@
 package com.example.komalli
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -13,7 +14,6 @@ class ComprobanteActivity : AppCompatActivity() {
     private var id = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityComprobanteBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
@@ -21,5 +21,9 @@ class ComprobanteActivity : AppCompatActivity() {
         id = intent.getStringExtra("id")!!
         Toast.makeText(this@ComprobanteActivity, "ID : ${id}", Toast.LENGTH_SHORT).show()
         binding.tvIdCompra.setText(id)
+        binding.btnSeguirComprandoComprobante.setOnClickListener {
+            val intent = Intent(this@ComprobanteActivity, HistorialComprasActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

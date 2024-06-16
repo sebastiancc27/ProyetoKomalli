@@ -18,7 +18,6 @@ class RegistroActivity : AppCompatActivity() {
     private lateinit var usuariosDB: UsuariosDB
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding=ActivityRegistroBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)

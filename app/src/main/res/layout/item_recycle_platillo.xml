@@ -22,7 +22,7 @@
             android:id="@+id/imgv_platillo"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/icons8_emoji_sndwich_96_ezgif_com_gif_maker"
+            android:src="@drawable/icono_platillo_default"
             />
 
         <TextView

@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="400dp"
-        android:background="@drawable/logo"
+        android:background="@drawable/img_logo_komalli"
         >
         <ImageView
             android:id="@+id/imageView3"
@@ -36,7 +36,7 @@
             android:layout_marginStart="130dp"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            tools:srcCompat="@drawable/_200_logosimbolo_rgb_fondos_oscuros__1_"
+            tools:srcCompat="@drawable/img_logo_fondos_oscuros"
             />
     </LinearLayout>
     <TextView
@@ -70,7 +70,7 @@
         android:shadowRadius="10"
         android:shadowColor="@color/white"
         android:textColor="@color/white"
-        android:background="@drawable/btns_inicio_registro"
+        android:background="@drawable/shape_btns_inicio_registro"
         android:text="@string/btn_iniciar_sesion"
         android:layout_gravity="center_vertical"
 
@@ -82,7 +82,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_registrarme"
-        android:background="@drawable/btns_inicio_registro"
+        android:background="@drawable/shape_btns_inicio_registro"
         android:shadowDx="1"
         android:shadowDy="7"
         android:shadowRadius="10"

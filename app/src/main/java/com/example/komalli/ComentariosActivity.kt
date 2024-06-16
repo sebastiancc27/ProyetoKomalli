@@ -18,7 +18,6 @@ class ComentariosActivity : AppCompatActivity() {
     private var correo = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding= ActivityComentariosBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
