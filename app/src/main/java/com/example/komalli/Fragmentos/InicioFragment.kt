@@ -24,7 +24,6 @@ class InicioFragment : Fragment() , ListenerRecyclePlatillo{
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
         val view = inflater.inflate(R.layout.fragment_inicio, container, false)
         recyclePlatillos = view.findViewById(R.id.recycle_platillo)
@@ -35,14 +34,9 @@ class InicioFragment : Fragment() , ListenerRecyclePlatillo{
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         usuario = arguments?.getString("correo")!!
-      //s  Toast.makeText(requireContext(), "Correo Inicio : ${usuario}", Toast.LENGTH_SHORT).show()
 
         platillos= arrayListOf<Platillo>()
-        var i =1;
-    /*    for(platillo in platillos){
-            println("PLATILLO URL ${i} :${platillo.urlImagen} ")
-            i++;
-        }*/
+
         db= PlatilloDB(requireContext())
         platillos=db.obtenerPlatillos()
         adapter = RecyclerPlatilloAdapter(platillos, requireContext(), this)
@@ -52,7 +46,6 @@ class InicioFragment : Fragment() , ListenerRecyclePlatillo{
     }
 
     override fun clickPlatillo(position: Int) {
-        //Toast.makeText(context, "POSICION ${platillos[position].nombre}", Toast.LENGTH_LONG).show()
         val fragmentoB = ProductoFragment()
         var nombrePlatillo=platillos[position].nombre
         var precioPlatillo=platillos[position].precio
@@ -66,7 +59,6 @@ class InicioFragment : Fragment() , ListenerRecyclePlatillo{
         bundle.putString("correo", usuario)
         bundle.putString("urlImagen", urlImagen)
         fragmentoB.arguments=bundle
-        //  activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.frame_container, ProductoFragment()) ?.addToBackStack(null)?.commit()
         activity?.supportFragmentManager?.beginTransaction()
             ?.replace(R.id.frame_container, fragmentoB)
             ?.addToBackStack(null)

@@ -7,7 +7,7 @@
     <string name="registro_inicios_activity_slogan">Comida rápida \n estudios sin interrupciones</string>
     <string name="btn_iniciar_sesion">Iniciar Sesión</string>
     <string name="btn_registrarme">Registrarme</string>
-    <string name="error_et_nombre">Campo nombre requerido</string>
+
     <!--ACTIVITY REGISTRO-->
     <string name="registro_activity_titulo">Registrar</string>
     <string name="et_nombre_registro">Nombre</string>
@@ -17,11 +17,23 @@
     <string name="et_correo_registro">Correo Institucional</string>
     <string name="et_contrasena_registro">Contraseña</string>
     <string name="btn_registrarme_registro">Registrarme</string>
+
+    <string name="error_et_nombre">Campo nombre requerido</string>
+    <string name="error_et_apellido">Campo apellido requerido"</string>
+    <string name="error_et_localidad">Campo localidad requerido</string>
+    <string name="error_et_telefono">Campo telefono requerido</string>
+
+
     <!--ACTIVITY INICIO DE SESIÓN-->
     <string name="inicio_sesion_activity_titulo">Iniciar Sesión</string>
     <string name="et_correo_inicio_sesion">Correo Institucional</string>
     <string name="et_contrasena_inicio_sesion">Contraseña</string>
     <string name="btn_iniciar_sesion_activity">Iniciar Sesión</string>
+
+    <string name="error_et_correo">Campo correo requerido</string>
+    <string name="error_et_contrasena">Campo contraseña requerido</string>
+
+
     <!--ACTIVITY MODIFICAR PERFIL-->
     <string name="modificar_perfil_activity_titulo">Mi Perfíl</string>
     <string name="tv_modificacion_datos">Modificación de Datos</string>
@@ -29,6 +41,7 @@
     <string name="et_telefono_usuario">Teléfono</string>
     <string name="et_localidad_usuario">Localidad</string>
     <string name="btn_modificar_datos">Modificar Datos</string>
+    <string name="error_modificar_datos">Campo necesario para actualiza</string>
     <string name="btn_regresar">Regresar</string>
     <!--ACTIVITY HISTORIAL DE COMPRAS-->
     <string name="historial_compras_activity_titulo">Compras</string>
@@ -43,10 +56,13 @@
     <string name="tv_agregar_comantario">Agregar Comentario</string>
     <string name="btn_agregar_comentario">Agregar Comentario</string>
     <string name="btn_regresar_comentarios">Regresar</string>
+    <string name="error_comentario">Es necesario llenar este campo</string>
+
     <!--ACTIVITY PAGO-->
     <string name="pago_activity_titulo">Pago</string>
     <string name="tv_compra_del_producto">Compra del Producto</string>
     <string name="tv_id_compra">Id de Compra</string>
+    <string name="tv_id_compra_prueba">Id de Prueba</string>
     <string name="tv_compra_registrada">El producto ha sido registrado en su historial de compras</string>
     <string name="btn_seguir_comprando">Seguir Comprando</string>
     <!--ACTIVITY NAV-HEADER-->
@@ -70,14 +86,34 @@
     <string name="btn_fragmento_mi_perfil_modificar_datos">Modificar mis datos</string>
     <string name="btn_fragmento_mi_perfil_cerrar_sesion">Cerrar Sesión</string>
     <string name="btn_fragmento_mi_perfil_eliminar_perfil">Eliminar Perfil</string>
+
+    <string name="tv_nombre_usuario_perfil">Cristiano Ronaldo</string>
+    <string name="tv_correo_usuario_perfil">orreodeejemplo@gmail.com</string>
+    <string name="tv_tel_usuario_perfil">2283040567</string>
+    <string name="tv_localidad_usuario_perfil">Xalapa</string>
+
     <!-- FRAGMENTO COMPRA-->
     <string name="fragmento_compra_titulo">Produto Seleccionado</string>
     <string name="btn_fragmento_compra_pago">Realizar Pago</string>
+
+    <string name="tv_piezas_compra">22 piezas</string>
+    <string name="tv_total_compra">$50.00</string>
+
     <!-- FRAGMENTO COMENTARIOS -->
     <string name="fragmento_comentarios_titulo">Comentarios</string>
     <!--ITEM RECYCLE COMENTARIOS-->
     <string name="tv_usuario_comentario">Cristiano Ronaldo</string>
     <string name="tv_contenido_comentario">Contenido del comentario</string>
+    <!--ITEM RECYCLE PLATILLO-->
+    <string name="tv_nombre_platillo_rv">Sandwich</string>
+    <string name="tv_precio_platillo_rv">$30.00</string>
+
+    <!--BOTTOM_MENU-->
+    <string name="item_inicio">Inicio</string>
+    <string name="item_comentarios">Comentarios</string>
+    <string name="item_perfil">Perfil</string>
+
+
 
 
 </resources>

@@ -48,22 +48,22 @@ class RegistroActivity : AppCompatActivity() {
              valido=true
          }else{
              if(nombre.isEmpty()){
-                 binding.etNombre.error=R.string.error_et_nombre.toString()
+                 binding.etNombre.error=getString(R.string.error_et_nombre)
              }
              if(apellido.isEmpty()){
-                 binding.etApellido.error="Campo apellido requerido"
+                 binding.etApellido.error=getString(R.string.error_et_apellido)
              }
              if(localidad.isEmpty()){
-                 binding.etLocalidad.error="Campo localidad requerido"
+                 binding.etLocalidad.error=getString(R.string.error_et_localidad)
              }
              if(correo.isEmpty()){
-                 binding.etCorreo.error="Campo correo requerido"
+                 binding.etCorreo.error=getString(R.string.error_et_correo)
              }
              if(contrasena.isEmpty()){
-                 binding.etContrasena.error="Campo contraseña requerido"
+                 binding.etContrasena.error=getString(R.string.error_et_contrasena)
              }
              if(telefono.isEmpty()){
-                 binding.etContrasena.error="Campo telefono requerido"
+                 binding.etContrasena.error=getString(R.string.error_et_telefono)
              }
          }
         return valido

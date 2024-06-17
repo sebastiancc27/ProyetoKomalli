@@ -52,8 +52,8 @@ class ModificarPerfilActivity : AppCompatActivity() {
     fun validarCampos() : Boolean{
         var validado =false
         if(binding.etLocalidadPerfil.text.isEmpty() || binding.etTelefonoPerfil.text.isEmpty()){
-            binding.etTelefonoPerfil.error="Campo necesario para actualizar"
-            binding.etLocalidadPerfil.error="Campo necesario para actualizar"
+            binding.etTelefonoPerfil.error=getString(R.string.error_modificar_datos)
+            binding.etLocalidadPerfil.error=getString(R.string.error_modificar_datos)
         }else{
             validado=true
         }

@@ -32,7 +32,7 @@
                 android:id="@+id/tv_nombre_usuario_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cristiano Ronaldo"
+                android:text="@string/tv_nombre_usuario_perfil"
                 android:textSize="35sp"
                 android:layout_gravity="center"
                 />
@@ -54,7 +54,7 @@
                     android:id="@+id/tv_correo_usuario_mi_perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="correodeejemplo@gmail.com"
+                    android:text="@string/tv_correo_usuario_perfil"
                     android:textSize="20sp"
                     />
             </LinearLayout>
@@ -78,7 +78,7 @@
                     android:id="@+id/tv_tel_usuario_mi_perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2283040567"
+                    android:text="@string/tv_tel_usuario_perfil"
                     android:textSize="20sp"
                     />
             </LinearLayout>
@@ -102,7 +102,7 @@
                     android:id="@+id/tv_localidad_usuario_mi_perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Xalapa"
+                    android:text="@string/tv_localidad_usuario_perfil"
                     android:textSize="20sp"
                     />
             </LinearLayout>

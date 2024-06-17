@@ -34,7 +34,7 @@ class ComentariosActivity : AppCompatActivity() {
     }
     private fun validarCampos(){
         if(binding.etComentario.text.isEmpty()){
-            binding.etComentario.error="Es necesario llenar este campo"
+            binding.etComentario.error=getString(R.string.error_comentario)
         }else{
             val comentario = Comentario(null, correo, binding.etComentario.text.toString())
             val resultado = comentariosDB.agregarComentario(comentario)

@@ -44,12 +44,12 @@ class IniciarSesionActivity : AppCompatActivity() {
     private fun datosValidos( correo : String, contrasena : String) : Boolean{
         var esValido =  true
         if(correo.isEmpty()){
-            binding.etCorreo.error="Campo de correo requerido"
+            binding.etCorreo.error= getString(R.string.error_et_correo)
             esValido=false
         }
 
         if(contrasena.isEmpty()){
-            binding.etContrasena.error="Campo de correo requerido"
+            binding.etContrasena.error=getString(R.string.error_et_contrasena)
             esValido=false
         }
 

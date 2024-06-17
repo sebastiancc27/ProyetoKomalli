@@ -52,9 +52,9 @@ class PlatilloActivity : AppCompatActivity() {
         }
     }
     private fun replaceFragment(fragmento : Fragment){
-        val bundle = Bundle()
-        bundle.putString("correo", correo)
-        fragmento.arguments=bundle
-        supportFragmentManager.beginTransaction().replace(R.id.frame_container, fragmento).addToBackStack(null).commit()
+            val bundle = Bundle()
+            bundle.putString("correo", correo)
+            fragmento.arguments=bundle
+            supportFragmentManager.beginTransaction().replace(R.id.frame_container, fragmento).addToBackStack(null).commit()
     }
 }
