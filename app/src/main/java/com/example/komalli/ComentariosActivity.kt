@@ -40,6 +40,7 @@ class ComentariosActivity : AppCompatActivity() {
             val resultado = comentariosDB.agregarComentario(comentario)
             if(resultado>0){
                 Toast.makeText(this@ComentariosActivity, "COMENTARIO INGRESADO CORRECTAMENTE", Toast.LENGTH_SHORT).show()
+                binding.etComentario.text.clear()
             }else{
                 Toast.makeText(this@ComentariosActivity, "ERROR AL AGREGAR COMENTARIO", Toast.LENGTH_SHORT).show()
             }

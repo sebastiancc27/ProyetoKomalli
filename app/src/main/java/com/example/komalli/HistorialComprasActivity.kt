@@ -32,6 +32,7 @@ class HistorialComprasActivity : AppCompatActivity(), ListenerRecycleHCompras {
         recycleview=binding.recycleHistorialCompras
         recycleview.layoutManager= LinearLayoutManager(this@HistorialComprasActivity)
         arrayCompras = arrayListOf<Compra>()
+
         arrayCompras= compraBD.obtenerComprasUsuario(correo)
         adapter = RecycleHComprasAdapter(arrayCompras, this)
         recycleview.adapter=adapter
@@ -43,7 +44,7 @@ class HistorialComprasActivity : AppCompatActivity(), ListenerRecycleHCompras {
     }
 
     override fun clickCompra(position: Int) {
-        Toast.makeText(this@HistorialComprasActivity, "NOMBRE PRODUCTO: ${arrayCompras[position].nombreProducto}", Toast.LENGTH_SHORT).show()
+    //    Toast.makeText(this@HistorialComprasActivity, "NOMBRE PRODUCTO: ${arrayCompras[position].nombreProducto}", Toast.LENGTH_SHORT).show()
         val idCompra = arrayCompras[position].id.toString()
         val intent = Intent(this@HistorialComprasActivity, ComprobanteActivity::class.java)
         intent.putExtra("id",idCompra)

@@ -45,6 +45,7 @@
         android:textSize="30sp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
+        android:singleLine="true"
         />
     <EditText
         android:id="@+id/etTelefonoPerfil"
@@ -58,6 +59,8 @@
         android:layout_marginTop="20dp"
         android:textSize="23sp"
         android:layout_gravity="center"
+        android:inputType="number"
+        android:maxLength="10"
         />
 
     <EditText
@@ -72,7 +75,8 @@
         android:layout_marginTop="20dp"
         android:textSize="23sp"
         android:layout_gravity="center"
-
+        android:maxLength="30"
+        android:singleLine="true"
         />
     <Button
         android:id="@+id/btn_modificar_datos"

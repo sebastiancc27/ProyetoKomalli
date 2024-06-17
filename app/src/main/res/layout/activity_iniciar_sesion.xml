@@ -45,6 +45,8 @@
             android:textSize="25sp"
             android:layout_gravity="center"
             android:padding="5dp"
+            android:singleLine="true"
+            android:maxLength="30"
             />
         <EditText
             android:id="@+id/et_contrasena"
@@ -59,6 +61,8 @@
             android:layout_gravity="center"
             android:padding="5dp"
             android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:maxLength="10"
             />
         <Button
 

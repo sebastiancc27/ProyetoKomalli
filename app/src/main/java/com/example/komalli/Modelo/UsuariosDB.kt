@@ -38,7 +38,7 @@ class UsuariosDB(context : Context) : SQLiteOpenHelper(context, NOMBRE_DB, null,
     }
 
     fun agregarUsuarios( usuario : Usuario) : Long{
-        val db = writableDatabase
+        val db = writableDatabase//MODIFICACIÓN, INSERCIÓN
         val insertarUsuario = ContentValues()
         insertarUsuario.put(COLUMN_CORREO, usuario.correo)
         insertarUsuario.put(COLUMN_NOMBRE, usuario.nombre)
@@ -53,7 +53,7 @@ class UsuariosDB(context : Context) : SQLiteOpenHelper(context, NOMBRE_DB, null,
 
     fun validadUsuario( correo : String, contrasena: String) : Boolean{
         var validado = false
-        val db = readableDatabase
+        val db = readableDatabase//SELECCIÓN LECTURA
         val validarQuery ="SELECT $COLUMN_CORREO, $COLUMN_CONTRASENA FROM $NOMBRE_TABLA WHERE $COLUMN_CORREO='${correo}' AND $COLUMN_CONTRASENA='${contrasena}'"
         val cursor = db.rawQuery(validarQuery,null)
         if(cursor.count>0){

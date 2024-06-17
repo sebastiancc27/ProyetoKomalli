@@ -88,7 +88,7 @@ class ProductoFragment : Fragment() {
             bundle.putString("correo", correo)
 
             fragmentoB.arguments=bundle
-            Toast.makeText(requireContext(), "totalPieza ${totalPiezas}", Toast.LENGTH_LONG).show()
+           // Toast.makeText(requireContext(), "totalPieza ${totalPiezas}", Toast.LENGTH_LONG).show()
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.frame_container, fragmentoB)?.addToBackStack(null)?.commit()
         }
 

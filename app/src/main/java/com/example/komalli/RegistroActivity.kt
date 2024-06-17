@@ -63,7 +63,7 @@ class RegistroActivity : AppCompatActivity() {
                  binding.etContrasena.error=getString(R.string.error_et_contrasena)
              }
              if(telefono.isEmpty()){
-                 binding.etContrasena.error=getString(R.string.error_et_telefono)
+                 binding.etTelefono.error=getString(R.string.error_et_telefono)
              }
          }
         return valido

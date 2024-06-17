@@ -23,7 +23,7 @@ class ComentariosDB(context : Context) : SQLiteOpenHelper(context, NOMBRE_DB, nu
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-        TODO("Not yet implemented")
+
     }
     fun crearTabla(){
         val db = writableDatabase
