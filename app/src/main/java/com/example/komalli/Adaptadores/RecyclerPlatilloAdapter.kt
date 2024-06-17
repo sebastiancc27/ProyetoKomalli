@@ -34,7 +34,6 @@ class RecyclerPlatilloAdapter( var alimentos : ArrayList<Platillo>,val context: 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val platillo = alimentos[position]
         val imageUrl =platillo.urlImagen
-        Log.d("RecyclerPlatilloAdapter", "Image URL: $imageUrl")
         holder.nombrePlatillo.text=platillo.nombre
         holder.precioPlatillo.text="$ ${platillo.precio.toString()}0"
         holder.itemRecycle.setOnClickListener{

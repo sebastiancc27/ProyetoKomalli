@@ -34,7 +34,7 @@ class ProductoFragment : Fragment() {
         val precioProducto = arguments?.getDouble("precioPlatillo")
         val existenciaProducto = arguments?.getInt("existenciasPlatillo")
         correo = arguments?.getString("correo")!!
-        Toast.makeText(requireContext(), "Correo Producto: ${correo}", Toast.LENGTH_SHORT).show()
+     //   Toast.makeText(requireContext(), "Correo Producto: ${correo}", Toast.LENGTH_SHORT).show()
         Picasso.get().load(urlImagen).into(imagenPlatillo)
 
         var precioTotal=precioProducto

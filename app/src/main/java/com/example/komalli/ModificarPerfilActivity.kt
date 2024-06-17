@@ -24,7 +24,7 @@ class ModificarPerfilActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         correo = intent.getStringExtra("correo")!!
-        Toast.makeText(this@ModificarPerfilActivity, "${correo}", Toast.LENGTH_LONG).show()
+      //  Toast.makeText(this@ModificarPerfilActivity, "${correo}", Toast.LENGTH_LONG).show()
         usuariosDB = UsuariosDB(this@ModificarPerfilActivity)
         binding.btnRegresar.setOnClickListener {
             val intent = Intent(this@ModificarPerfilActivity, PlatilloActivity::class.java)
@@ -62,6 +62,7 @@ class ModificarPerfilActivity : AppCompatActivity() {
 
     fun cargarDatosUsuario(){
         val usuario = usuariosDB.obtenerDatosUsuario(correo)
+        binding.tvNombreUsuario.setText(usuario.nombre)
         binding.etLocalidadPerfil.setText(usuario.localidad)
         binding.etTelefonoPerfil.setText(usuario.telefono)
     }

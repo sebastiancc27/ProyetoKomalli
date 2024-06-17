@@ -37,7 +37,7 @@ class MiPerfilFragment : Fragment() {
 
         val usuario = usuariosDB.obtenerDatosUsuario(correo)
 
-        Toast.makeText(requireContext(), "${correo}", Toast.LENGTH_LONG).show()
+      //  Toast.makeText(requireContext(), "${correo}", Toast.LENGTH_LONG).show()
         val btnModificarPerfil : Button = view.findViewById(R.id.btn_modificar_datos)
         val btnHistorialCompras : Button = view.findViewById(R.id.btn_historial_compras)
         val btnCerrarSesion : Button = view.findViewById(R.id.btn_cerrar_sesion)

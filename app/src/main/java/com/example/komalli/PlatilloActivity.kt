@@ -24,7 +24,7 @@ class PlatilloActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         correo = intent.getStringExtra("correo")!!
-        Toast.makeText(this@PlatilloActivity, "${correo}", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this@PlatilloActivity, "${correo}", Toast.LENGTH_LONG).show()
         bottomNavigationView = binding.bottomNavigation
         replaceFragment(InicioFragment())
         bottomNavigationView.setOnItemSelectedListener {

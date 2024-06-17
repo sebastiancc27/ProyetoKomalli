@@ -13,7 +13,9 @@ class PlatilloDB(context: Context ) : SQLiteOpenHelper(context, NOMBRE_DB, null,
     companion object{
         private const val NOMBRE_DB = "Komalli"
         private const val VERSIONDB=1
+
         private const val NOMBRE_TABLA="Platillos"
+
         private const val COLUMN_NOMBRE="Nombre"
         private const val COLUMN_PRECIO="Precio"
         private const val COLUMN_EXISTENCIAS="Existencias"
@@ -41,6 +43,7 @@ class PlatilloDB(context: Context ) : SQLiteOpenHelper(context, NOMBRE_DB, null,
         insertarPlatillo.put(COLUMN_PRECIO, platillo.precio)
         insertarPlatillo.put(COLUMN_EXISTENCIAS, platillo.cantidad)
         insertarPlatillo.put(COLUMN_IMAGEN, platillo.urlImagen)
+
         val filasAfectadas = db.insert(NOMBRE_TABLA,null,insertarPlatillo)
         db?.close()
         return filasAfectadas
@@ -51,13 +54,16 @@ class PlatilloDB(context: Context ) : SQLiteOpenHelper(context, NOMBRE_DB, null,
         val db = readableDatabase
         var platillos = ArrayList<Platillo>()
         val cursor : Cursor = db.query(NOMBRE_TABLA, null, null,null,null,null,null)
+        //select * from platillos
         if(cursor!=null){
             while (cursor.moveToNext()){
                 val nombre = cursor.getString(cursor.getColumnIndex(COLUMN_NOMBRE))
                 val precio = cursor.getDouble(cursor.getColumnIndex(COLUMN_PRECIO))
                 val existencias = cursor.getInt(cursor.getColumnIndex(COLUMN_EXISTENCIAS))
                 val urlImagen = cursor.getString(cursor.getColumnIndex(COLUMN_IMAGEN))
+
                 val platillo = Platillo(nombre, precio, existencias, urlImagen)
+
                 platillos.add(platillo)
             }
             cursor.close()

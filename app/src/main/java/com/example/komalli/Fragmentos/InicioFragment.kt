@@ -35,14 +35,14 @@ class InicioFragment : Fragment() , ListenerRecyclePlatillo{
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         usuario = arguments?.getString("correo")!!
-        Toast.makeText(requireContext(), "Correo Inicio : ${usuario}", Toast.LENGTH_SHORT).show()
+      //s  Toast.makeText(requireContext(), "Correo Inicio : ${usuario}", Toast.LENGTH_SHORT).show()
 
         platillos= arrayListOf<Platillo>()
         var i =1;
-        for(platillo in platillos){
+    /*    for(platillo in platillos){
             println("PLATILLO URL ${i} :${platillo.urlImagen} ")
             i++;
-        }
+        }*/
         db= PlatilloDB(requireContext())
         platillos=db.obtenerPlatillos()
         adapter = RecyclerPlatilloAdapter(platillos, requireContext(), this)

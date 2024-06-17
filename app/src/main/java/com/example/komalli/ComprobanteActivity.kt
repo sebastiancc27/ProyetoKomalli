@@ -19,7 +19,7 @@ class ComprobanteActivity : AppCompatActivity() {
         setContentView(view)
 
         id = intent.getStringExtra("id")!!
-        Toast.makeText(this@ComprobanteActivity, "ID : ${id}", Toast.LENGTH_SHORT).show()
+      //  Toast.makeText(this@ComprobanteActivity, "ID : ${id}", Toast.LENGTH_SHORT).show()
         binding.tvIdCompra.setText(id)
         binding.btnSeguirComprandoComprobante.setOnClickListener {
             val intent = Intent(this@ComprobanteActivity, HistorialComprasActivity::class.java)

@@ -48,7 +48,7 @@ class CompraFragment : Fragment() {
         val totalPiezas = arguments?.getInt("totalPiezas")
         val totalPago = arguments?.getDouble("totalPago")
         var existenciasPlatillo = 0
-        Toast.makeText(requireContext(), "Correo Inicio : ${correo}", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(requireContext(), "Correo Inicio : ${correo}", Toast.LENGTH_SHORT).show()
 
         for (platillo in arrayPlatillos){
             if(platillo.nombre.equals(nombreProducto)){

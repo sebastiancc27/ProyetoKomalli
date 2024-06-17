@@ -38,6 +38,7 @@
         />
 
     <TextView
+        android:id="@+id/tv_nombre_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/_tv_nombre_usuario"
@@ -48,7 +49,7 @@
     <EditText
         android:id="@+id/etTelefonoPerfil"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="@string/et_telefono_usuario"
         android:background="@color/color_accent_gray"
         android:paddingTop="10dp"
@@ -62,7 +63,7 @@
     <EditText
         android:id="@+id/etLocalidadPerfil"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="@string/et_localidad_usuario"
         android:background="@color/color_accent_gray"
         android:paddingTop="10dp"

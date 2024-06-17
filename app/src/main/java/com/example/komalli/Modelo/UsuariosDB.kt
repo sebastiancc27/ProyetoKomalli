@@ -14,6 +14,7 @@ class UsuariosDB(context : Context) : SQLiteOpenHelper(context, NOMBRE_DB, null,
         private const val NOMBRE_DB = "Komalli"
         private const val NOMBRE_TABLA="Usuarios"
         private const val VERSIONDB=1
+        //TUPLAS DE LA TABLA
         private const val COLUMN_NOMBRE="Nombre"
         private const val COLUMN_APELLIDO="Apellido"
         private const val COLUMN_CORREO="Correo"

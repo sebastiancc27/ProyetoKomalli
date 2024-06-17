@@ -23,7 +23,7 @@ class ComentariosActivity : AppCompatActivity() {
         setContentView(view)
         comentariosDB = ComentariosDB(this@ComentariosActivity)
         correo=intent.getStringExtra("correo")!!
-        Toast.makeText(this@ComentariosActivity, "CORREO DEL USUARIO : ${correo}", Toast.LENGTH_SHORT).show()
+       // Toast.makeText(this@ComentariosActivity, "CORREO DEL USUARIO : ${correo}", Toast.LENGTH_SHORT).show()
         binding.btnAgregarComentario.setOnClickListener {
             validarCampos()
         }

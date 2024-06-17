@@ -59,6 +59,7 @@
     <string name="fragmento_pago_titulo">Pago</string>
     <string name="fragmento_producto_cantidad">Cantidad</string>
     <string name="fragmento_producto_total">Total a Pagar</string>
+    <string name="fragmento_existencias_platillo">Existencias Platillo</string>
     <string name="btn_fragmento_producto_pagar">Pagar</string>
     <!-- FRAGMENTO PERFIL-->
     <string name="fragmento_mi_perfil_titulo">Mi Perfil</string>
