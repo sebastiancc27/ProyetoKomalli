@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.komalli.Modelo.ComentariosDB
 import com.example.komalli.Modelo.CompraDB
 import com.example.komalli.Modelo.PlatilloDB
+import com.example.komalli.Modelo.UsuariosDB
 import com.example.komalli.Poko.Platillo
 import com.example.komalli.databinding.ActivityRegistroInicioSactivityBinding
 
@@ -19,6 +20,7 @@ class RegistroInicioSActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegistroInicioSactivityBinding
     private lateinit var db : PlatilloDB
     private lateinit var dbCompras : CompraDB
+    private lateinit var usuariosDB: UsuariosDB
     private lateinit var dbComentarios : ComentariosDB
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +29,9 @@ class RegistroInicioSActivity : AppCompatActivity() {
         val view=binding.root
         setContentView(view)
         db= PlatilloDB(this@RegistroInicioSActivity)
-
+        //Se crea la tabla de usuarios
+        usuariosDB= UsuariosDB(this@RegistroInicioSActivity)
+        usuariosDB.crearTabla()
         //SE CREA LA TABLA DE COMPRAS EN CASO DE NO EXISTIR
         dbCompras = CompraDB(this@RegistroInicioSActivity)
         dbCompras.crearTabla()
@@ -58,7 +62,13 @@ class RegistroInicioSActivity : AppCompatActivity() {
         val platillo10=Platillo("HotCakes",35.0,40,"https://peopleenespanol.com/thmb/6R8iuETsWXmcVXjbQveyLOWZJiU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hot-cakes-esponjosos-estilo-americano.jpg-2000-e4f6d8f32b9d43f7abffb65ee93affb8.jpg")
         // db.eliminarTabla()
         db.crearTabla()
-        val cargarPlatillo=db.agregarPlatillo(platillo1)
+        val cargarPlatillo=db.agregarPlatillo(platillo2)
+        val cargarPlatillo2=db.agregarPlatillo(platillo6)
+        val cargarPlatillo3=db.agregarPlatillo(platillo7)
+        val cargarPlatillo4=db.agregarPlatillo(platillo8)
+        val cargarPlatillo5=db.agregarPlatillo(platillo9)
+        val cargarPlatillo6=db.agregarPlatillo(platillo10)
+
 
         }
 
